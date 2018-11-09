@@ -1,0 +1,52 @@
+CREATE TABLE Pabrik(
+	idPabrik
+	NamaPabrik
+	AlamatPabrik
+
+);
+CREATE TABLE Distributor(
+	idPerusahaan numeric(),
+	NamaPerusahaan
+);
+CREATE TABLE Bengkel(
+);
+CREATE TABLE Departemen(
+	NoDepartemen
+	NamaDepartemen
+);
+CREATE TABLE SparePart(
+	NoSparePart
+	NamaSparePart
+	StokSparePart
+	HargaSparePart
+);
+CREATE TABLE Kendaraan(
+	NoPolisi,
+	NoPelanggan,
+	Jenis Kendaraan,
+	TanggalMasuk,
+	Alamat,
+);
+CREATE TABLE Pelanggan(
+	NoPelanggan,
+	NamaPelanggan,
+	AlamatPelanggan,
+	AlamatPelanggan,
+	PRIMARY KEY (NoPelanggan)
+);
+CREATE TABLE Pegawai(
+	NoPegawai
+	NamaPegawai
+	Alamat
+	NoTelepon
+);
+CREATE TABLE Manager(
+);
+CREATE TABLE Pembayaran(
+	NomorBayar,
+	NoPelanggan,
+	TanggalBayar,
+	JumlahBayar,
+	PRIMARY KEY (NomorBayar),
+	FOREIGN KEY (NoPelanggan) references Pelanggan
+);

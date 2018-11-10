@@ -9,6 +9,10 @@ CREATE TABLE Distributor(
 	NamaPerusahaan
 );
 CREATE TABLE Bengkel(
+	NoBengkel
+	NamaBengkel
+	AlamatBengkel
+	NoTelpBengkel
 );
 CREATE TABLE Departemen(
 	NoDepartemen
@@ -41,6 +45,8 @@ CREATE TABLE Pegawai(
 	NoTelepon
 );
 CREATE TABLE Manager(
+	NoPegawai (FK)
+	NamaPegawai (FK)	
 );
 CREATE TABLE Pembayaran(
 	NomorBayar,
